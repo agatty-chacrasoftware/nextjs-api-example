@@ -1,0 +1,26 @@
+{
+	"extends": [
+	  "eslint:recommended",
+	  "plugin:@typescript-eslint/recommended",
+	  "plugin:react/recommended",
+	  "plugin:react-hooks/recommended",
+	  "plugin:jsx-a11y/recommended",
+	  "next"
+	],
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+	  "@typescript-eslint/ban-ts-comment": [
+		"error",
+		{ "ts-ignore": "allow-with-description" }
+	  ],
+	  "@typescript-eslint/no-unused-vars": [
+		"error",
+		{
+		  "argsIgnorePattern": "^_",
+		  "varsIgnorePattern": "^_",
+		  "caughtErrorsIgnorePattern": "^_"
+		}
+	  ]
+	}
+  }
