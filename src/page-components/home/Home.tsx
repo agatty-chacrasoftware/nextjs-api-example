@@ -1,5 +1,4 @@
 import { MainLayout } from '@/layouts'
-import { SEO } from '@/components'
 import { Box, Button, Center, Flex } from '@chakra-ui/react'
 import { useState } from 'react'
 
@@ -20,14 +19,6 @@ const Home = () => {
 
   return (
     <MainLayout className="container" theme="dark">
-      <SEO
-        title="TODO"
-        description="TODO Description."
-        url="todochange.com"
-        image=""
-        imageAlt=""
-      />
-
       <Center>
         <Flex w="500px" h="500px" bgColor="blue">
           <Button
